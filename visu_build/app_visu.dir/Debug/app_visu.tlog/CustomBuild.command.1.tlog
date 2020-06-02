@@ -1,0 +1,10 @@
+^C:\USERS\TOBIA\DESKTOP\MASTER_ARBEIT\UNTERPROG\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/tobia/Desktop/Master_Arbeit/UnterProg -BC:/Users/tobia/Desktop/Master_Arbeit/UnterProg/visu_build --check-stamp-file C:/Users/tobia/Desktop/Master_Arbeit/UnterProg/visu_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
